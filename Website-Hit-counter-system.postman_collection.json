@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "09b8da73-cc20-441c-8b84-d7e552264072",
+		"name": "Website-Hit-counter-system",
+		"description": "StartFragmentThe \"Website Hit Counter System\" is a backend application designed to track visits to a website by different customers using multiple devices. It implements a publisher-subscriber notification system to ensure accurate tracking of website visits. The system allows for the tracking of visits by unique customers, regardless of the device they use.EndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33639325"
+	},
+	"item": [
+		{
+			"name": "Get Request",
+			"item": [
+				{
+					"name": "Visit Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/customer-visit-count?customerId=customer1&websiteId=website1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer-visit-count"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "customer1"
+								},
+								{
+									"key": "websiteId",
+									"value": "website1"
+								}
+							]
+						},
+						"description": "{  \n\"customerId\": \"customer1\",  \n\"deviceId\": \"device1\",  \n\"websiteId\": \"website1\"  \n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Overall Website Hit Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/overall-visit-count?websiteId=website1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"overall-visit-count"
+							],
+							"query": [
+								{
+									"key": "websiteId",
+									"value": "website1"
+								}
+							]
+						},
+						"description": "#### 2\\. Get Website Visit Count for Customer (GET /api/customer-visit-count)\n\n- **Request Method**: GET\n- **URL**: `http://localhost:3000/api/customer-visit-count`\n- **Description**: Retrieves the number of visits a specific customer has made to a specific website.\n- **Query Parameters**:\n    - `customerId`: The ID of the customer.\n    - `websiteId`: The ID of the website."
+					},
+					"response": []
+				}
+			],
+			"description": "StartFragment\n\n#### 1\\. Visit Website (POST /api/visit)\n\n- **Request Method**: POST\n    \n- **URL**: `http://localhost:3000/api/visit`\n    \n- **Description**: Tracks a visit to a website by a specific customer using a specific device.\n    \n- jsonCopy code{ \"customerId\": \"customer1\", \"deviceId\": \"device1\", \"websiteId\": \"website1\"}\n    \n- jsonCopy code{ \"message\": \"Visit tracked successfully\"}\n    \n\nEndFragment"
+		},
+		{
+			"name": "Post Request",
+			"item": [
+				{
+					"name": "Visit Website",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": \"customer1\",\r\n  \"deviceId\": \"device1\",\r\n  \"websiteId\": \"website1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/visit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visit"
+							]
+						},
+						"description": "#### 3\\. Get Overall Website Hit Count (GET /api/overall-visit-count)\n\n- **Request Method**: GET\n    \n- **URL**: `http://localhost:3000/api/overall-visit-count`\n    \n- **Description**: Retrieves the total number of visits to a specific website by all customers.\n    \n- **Query Parameters**:\n    \n    - `websiteId`: The ID of the website."
+					},
+					"response": []
+				}
+			],
+			"description": "{  \n\"count\": 1  \n}"
+		}
+	]
+}
