@@ -16,26 +16,10 @@ The Website Hit Counter System is a backend application designed to track visits
 - **In-Memory Data Storage**: The system utilizes internal data structures to store visit data, eliminating the need for external databases or services.
 - **Postman**: Postman is used for API development, testing, and documentation, providing a comprehensive platform for building and collaborating on APIs.
 
-## Project Structure
-
-The project follows a modular structure with separate components for controllers, models, and routes. Each component is responsible for handling specific aspects of the application, ensuring clean separation of concerns and maintainability.
-
-website-hit-counter/
-├── node_modules/
-├── src/
-│ ├── controllers/
-│ │ └── visitController.js
-│ ├── models/
-│ │ └── visitModel.js
-│ ├── routes/
-│ │ └── visitRoutes.js
-│ ├── app.js
-│ └── server.js
-├── .env
-├── .gitignore
-├── package.json
-├── package-lock.json
-└── README.md
+## API Endpoints
+ - POST /api/visit: Track a visit to a website by a specific customer using a specific device.
+ - GET /api/customer-visit-count: Retrieve the number of visits a specific customer has made to a specific website.
+ - GET /api/overall-visit-count: Retrieve the total number of visits to a specific website by all customers.
 
 
 ## Setup Instructions
@@ -46,9 +30,14 @@ website-hit-counter/
    git clone https://github.com/yourusername/website-hit-counter.git
    cd website-hit-counter
 
-''' npm install
+```bash npm install
 
-''' PORT=3000
+```bash PORT=3000
 
-''' npm start
+```bash npm start
 
+## Deployment
+The application is deployed on Heroku.
+
+## API Documentation
+For detailed API documentation, please refer to the Postman Documentation.
