@@ -28,13 +28,14 @@ The Website Hit Counter System is a backend application designed to track visits
 
    ```bash
    git clone https://github.com/yourusername/website-hit-counter.git
+   
    cd website-hit-counter
 
-```bash npm install
+   npm install
 
-```bash PORT=3000
+   PORT=3000
 
-```bash npm start
+   npm start
 
 ## Deployment
 The application is deployed on Heroku.
