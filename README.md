@@ -41,7 +41,5 @@ The Website Hit Counter System is a backend application designed to track visits
 ## Deployment
 The application is deployed on Heroku.
 
-## API Documentation
 
-For detailed API documentation, please refer to the [Postman Documentation](https://api.postman.com/collections/33639325-09b8da73-cc20-441c-8b84-d7e552264072?access
 
