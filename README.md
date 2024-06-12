@@ -24,12 +24,11 @@ The Website Hit Counter System is a backend application designed to track visits
 
 ## Setup Instructions
 
-1. Clone the repository:
 
    ```bash
    git clone https://github.com/yourusername/website-hit-counter.git
    
-   cd website-hit-counter
+   cd src
 
    npm install
 
