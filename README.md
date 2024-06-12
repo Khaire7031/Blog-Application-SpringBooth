@@ -24,6 +24,7 @@ The Website Hit Counter System is a backend application designed to track visits
 
 ## Setup Instructions
 
+1. Steps:
 
    ```bash
    git clone https://github.com/yourusername/website-hit-counter.git
@@ -35,6 +36,7 @@ The Website Hit Counter System is a backend application designed to track visits
    PORT=3000
 
    npm start
+
 
 ## Deployment
 The application is deployed on Heroku.
