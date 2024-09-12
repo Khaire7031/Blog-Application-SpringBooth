@@ -3,11 +3,9 @@
 This is an ENTIRE application for Java Spring Boot using:
 - Spring Data JPA
 - H2 Database
-- Thymeleaf
 - Spring Security
 - Model View Controller (MVC) architecture
-
-**I walk through how to build this yourself on YouTube**: https://youtu.be/7iWlCl35p9o
+- 
 
 ## Development Instructions
 
